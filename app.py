@@ -7,13 +7,14 @@ import functions
 
 app_instance = None
 class App:
-    def __init__(self, call_back):
+    def __init__(self, call_back, fresh_install: bool):
         """
         Inits different components of teh GUI
         :param call_back:
         """
         global app_instance
         app_instance = self
+        self.fresh_install = fresh_install
         self.page = None
         self.theme_mode = "light"
         self.toggle_button = ft.Switch(label="Dark Mode", on_change=self.toggle_theme, focus_color=ft.colors.GREEN_100)
@@ -58,14 +59,15 @@ class App:
         :return:
         """
         self.page = page
-        self.page.title = "Windows Media Search"
+        self.page.title = "Descriptive Media Search"
         self.page.window.width = 500
         self.page.window.height = 400
         self.page.bgcolor = '#a3b9ff'
-        self.build_welcome_ui()
-        # self.build_ui()
-        # self.build_embedding_ui()
-        # self.page.update()
+        if self.fresh_install:   
+            self.build_welcome_ui()
+        else:
+            self.build_ui()
+        
 
     def toggle_theme(self, e):
         if self.theme_mode == "light":
