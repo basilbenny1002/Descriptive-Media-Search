@@ -1,0 +1,6 @@
+flet
+torch
+clip
+Pillow
+numpy
+sqlite3
