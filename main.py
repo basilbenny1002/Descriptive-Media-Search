@@ -5,7 +5,6 @@ import flet as ft
 import functions
 def pdata(e):
     if e == "search_button":
-        print("button found ee")
         results = functions.process_search(app.app_instance.search_field.value)
         app.app_instance.add_images(results)
     elif e == "start_button":
@@ -35,10 +34,10 @@ def update_progress():
 
 FRESH_INSTALL = False
 try:
-    with open("ebbeddings.db", 'r') as database:
+    with open("embeddings.db", 'r') as database:
         pass
+    
 except FileNotFoundError:
-    print("Fresh install")
     FRESH_INSTALL = True
 
 ft.app(target=app.App(call_back=pdata, fresh_install=FRESH_INSTALL).main)
