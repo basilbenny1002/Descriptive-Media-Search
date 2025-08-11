@@ -65,12 +65,10 @@ Built using OpenAI's CLIP model.
 
 ## Screenshots
 
-_Add a screenshot showing a sample search result:_
 
-```markdown
 ![Search example](assets/example1.png)
 ![Search example2](assets/example2.png)
-```
+
 
 
 
