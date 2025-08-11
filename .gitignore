@@ -10,3 +10,5 @@ test.py
 test2.py
 main_test.py
 .idea
+.vscode
+watcher
