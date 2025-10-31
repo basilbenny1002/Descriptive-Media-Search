@@ -10,7 +10,7 @@ Built using OpenAI's CLIP model.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/Descriptive-Image-Search
+   git clone https://github.com/basilbenny1002/Descriptive-Media-Search
    cd Descriptive-Image-Search
    ```
 
