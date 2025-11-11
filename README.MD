@@ -1,4 +1,8 @@
 
+# Better option
+## Try this [Smart Search](https://github.com/basilbenny1002/Smart-Search)
+### Its a search tool, made by me, which includes descriptive image search, descriptive file search based on the contents, and the normal searches as well, it is moreptimized and with a better ui
+
 # Descriptive-Image-Search
 
 Search your local images using natural language descriptions.  
